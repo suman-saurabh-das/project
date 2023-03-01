@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import FilterMenu from './components/FilterMenu';
+import SearchResults from './components/SearchResults';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <FilterMenu />
 
       {/* Search Results */}
+      <SearchResults />
     </div>
   );
 }
