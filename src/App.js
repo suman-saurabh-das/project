@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header';
+import FilterMenu from './components/FilterMenu';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
 
       {/* Filters Section */}
+      <FilterMenu />
 
       {/* Search Results */}
     </div>
