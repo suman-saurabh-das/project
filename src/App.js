@@ -1,9 +1,16 @@
 import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="text-3xl font-bold underline">
-      Heelo
+    // App Container
+    <div className="App font-inter max-w-screen-2xl m-auto">
+      {/* Header */}
+      <Header />
+
+      {/* Filters Section */}
+
+      {/* Search Results */}
     </div>
   );
 }
