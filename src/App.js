@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import './App.css';
+
 import Header from './components/Header';
 import FilterMenu from './components/FilterMenu';
 import SearchResults from './components/SearchResults';
@@ -8,10 +8,14 @@ import Sidebar from './components/Sidebar';
 export const SideBarContext = createContext()
 
 function App() {
-  const [isSidebarVisible, setIsSidebarVisible] = useState("-left-[500px]")
+
+  // useState hook and function to toggle sidebar in small devices
+  const [isSidebarVisible, setIsSidebarVisible] = useState("-left-[540px]")
   const handleSideBarVisibility = (value) => {
-    value ? setIsSidebarVisible("") : setIsSidebarVisible("-left-[500px]")
+    value ? setIsSidebarVisible("") : setIsSidebarVisible("-left-[540px]")
   }
+  // Disable scrolling when sidebar is open
+  isSidebarVisible ? document.body.style.overflow="auto" : document.body.style.overflow="hidden"
 
   return (
     // App Container

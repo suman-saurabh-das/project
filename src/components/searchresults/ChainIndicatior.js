@@ -8,6 +8,7 @@ const ChainIndicatior = ({ title, color }) => {
   }
 
   return (
+    // Card Chain indicator
     <div className={`border-2 ${colorVariants[color]} font-semibold py-1 px-2 rounded-full text-xs`}>
       {title}
     </div>

@@ -6,15 +6,15 @@ import SmallFilterMenu from './filtermenu/SmallFilterMenu'
 const FilterMenu = () => {
   return (
     <div className='px-3 sm:px-12 sm:py-6'>
-      {/* Heading */}
+      {/* Filtermenu -> Heading */}
       <h1 className='text-3xl hidden sm:block'>
         Search results for <span className='font-extrabold'>Projects</span>
       </h1>
 
-      {/* Large Screen Filter Menu */}
+      {/* Filtermenu -> for large devices */}
       <LargeFilterMenu />
 
-      {/* Small Screen Filter Menu */}
+      {/* Filtermenu -> for small devices */}
       <SmallFilterMenu />
     </div>
   )

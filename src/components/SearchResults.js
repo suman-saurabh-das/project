@@ -62,6 +62,7 @@ const cardsList = [
 
 const SearchResults = () => {
   return (
+    // Search results container (to display cards)
     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-3 sm:px-12 py-3 sm:py-6'>
       {
         cardsList.map(cardData => {

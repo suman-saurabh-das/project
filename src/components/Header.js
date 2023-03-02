@@ -9,9 +9,9 @@ const Header = () => {
         // Header Container
         <div className='border-b-[1px] border-gray-300 flex items-center justify-between px-3 sm:px-12 py-3 space-x-3'>
 
-            {/* Brand Logo & Navigation Options Container */}
+            {/* Header - Brand Logo & Navigation Options Container */}
             <div className='flex space-x-6'>
-                {/* Brand Logo Container */}
+                {/* Header - Brand Logo Container */}
                 <div className='flex'>
                     <div>
                         <img src={LogoImage} alt="company logo" />
@@ -20,7 +20,7 @@ const Header = () => {
                         <img src={LogoName} alt="company name" />
                     </div>
                 </div>
-                {/* Navigation Options */}
+                {/* Header - Navigation Options */}
                 <div className='sm:flex hidden items-center space-x-6'>
                     <button className='font-medium'>Products</button>
                     <button className='font-medium'>Resources</button>
@@ -28,11 +28,11 @@ const Header = () => {
                 </div>
             </div>
 
-            {/* Search Bar & Hamburger Menu Container */}
+            {/* Header - Search Bar & Hamburger Menu Container */}
             <div className='flex items-center space-x-3'>
-                {/* Search Bar */}
+                {/* Header - Search Bar */}
                 <SearchBar />
-                {/* Hamburger Menu */}
+                {/* Header - Hamburger Menu (only for small devices) */}
                 <button className='aspect-square border-2 sm:hidden px-[6px] py-[1px] rounded-full shadow-inner'>
                     <i class="uil uil-bars text-lg"></i>
                 </button>

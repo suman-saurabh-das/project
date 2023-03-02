@@ -4,11 +4,12 @@ import ChainIndicatior from './ChainIndicatior'
 
 const Card = ({ title, body, viewCount, likeCount }) => {
   return (
+    // Card container
     <div className='rounded-2xl w-full'>
 
-      {/* Top Car Container */}
+      {/* Top Card Container */}
       <div className='border-2 border-gray-200 pt-6 px-6 rounded-t-2xl'>
-        {/* Project image and buton container */}
+        {/* Card image and buton container */}
         <div className='flex items-start justify-between pb-4'>
           <div className=''>
             <img className='rounded-full' src={ProjectImage} alt="project logo" />
@@ -18,12 +19,13 @@ const Card = ({ title, body, viewCount, likeCount }) => {
           </button>
         </div>
 
-        {/* Project Details container */}
+        {/* Card heading and details container */}
         <div>
           <h3 className='font-extrabold text-2xl py-1'>{title}</h3>
           <p className='py-1'>{body}</p>
         </div>
-        {/* Project Chain container */}
+
+        {/* Card Chain container */}
         <div className='flex py-3 space-x-3'>
           <ChainIndicatior title={"Ethereum"} color={"purple"} />
           <ChainIndicatior title={"Polygon"} color={"gray"} />
@@ -33,7 +35,7 @@ const Card = ({ title, body, viewCount, likeCount }) => {
 
       {/* Bottom Card Container */}
       <div className='border-2 border-t-0 border-gray-200 bg-gray-100 font-medium py-3 px-6 rounded-b-2xl'>
-        {/* View and Like container */}
+        {/* Card view and like container */}
         <div className='flex items-center justify-between'>
           <div className='space-x-2'>
             <i className="uil uil-eye text-xl"></i>
@@ -45,6 +47,7 @@ const Card = ({ title, body, viewCount, likeCount }) => {
           </button>
         </div>
       </div>
+
     </div>
   )
 }
