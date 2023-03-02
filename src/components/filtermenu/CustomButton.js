@@ -5,6 +5,7 @@ const CustomButton = ({ buttonTitle }) => {
   const [handleSideBarVisibility] = useContext(SideBarContext)
 
   return (
+    // Custom Button - (Used in category Select for small devices)
     <div
       onClick={() => handleSideBarVisibility(true)}
       className='border-2 border-gray-200 flex items-center justify-center font-semibold px-3 py-1 rounded-lg space-x-2 text-sm w-full'>

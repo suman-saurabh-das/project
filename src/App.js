@@ -20,16 +20,14 @@ function App() {
         {/* Sidebar */}
         <Sidebar />
 
-        <div className="App font-inter max-w-screen-2xl m-auto">
-          {/* Header */}
-          <Header />
+        {/* Header */}
+        <Header />
 
-          {/* Filters Section */}
-          <FilterMenu />
+        {/* Filters Section */}
+        <FilterMenu />
 
-          {/* Search Results */}
-          <SearchResults />
-        </div>
+        {/* Search Results */}
+        <SearchResults />
       </div>
     </SideBarContext.Provider>
   );
