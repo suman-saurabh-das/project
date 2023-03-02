@@ -15,22 +15,22 @@ function App() {
 
   return (
     // App Container
-    <SideBarContext.Provider value={[isSidebarVisible, handleSideBarVisibility]}>
+    <SideBarContext.Provider value={[handleSideBarVisibility, isSidebarVisible]}>
       <div className="App font-inter max-w-screen-2xl m-auto">
         {/* Sidebar */}
         <Sidebar />
 
-    <div className="App font-inter max-w-screen-2xl m-auto">
-      {/* Header */}
-      <Header />
+        <div className="App font-inter max-w-screen-2xl m-auto">
+          {/* Header */}
+          <Header />
 
-      {/* Filters Section */}
-      <FilterMenu />
+          {/* Filters Section */}
+          <FilterMenu />
 
-      {/* Search Results */}
-      <SearchResults />
-    </div>
-    </div>
+          {/* Search Results */}
+          <SearchResults />
+        </div>
+      </div>
     </SideBarContext.Provider>
   );
 }

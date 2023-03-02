@@ -25,9 +25,9 @@ const Card = ({ title, body, viewCount, likeCount }) => {
         </div>
         {/* Project Chain container */}
         <div className='flex py-3 space-x-3'>
-          <ChainIndicatior title={"Ethereum"} color={"purple"}/>
-          <ChainIndicatior title={"Polygon"} color={"gray"}/>  
-          <ChainIndicatior title={"Binance"} color={"yellow"}/>
+          <ChainIndicatior title={"Ethereum"} color={"purple"} />
+          <ChainIndicatior title={"Polygon"} color={"gray"} />
+          <ChainIndicatior title={"Binance"} color={"yellow"} />
         </div>
       </div>
 

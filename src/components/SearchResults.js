@@ -65,7 +65,7 @@ const SearchResults = () => {
     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-3 sm:px-12 py-3 sm:py-6'>
       {
         cardsList.map(cardData => {
-          return <Card 
+          return <Card
             key={cardData.id}
             title={cardData.title}
             body={cardData.body}

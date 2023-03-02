@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Checkbox = ({category}) => {
+const Checkbox = ({ category }) => {
     return (
         <div>
             <div className='flex items-center mt-5 px-4 space-x-4 text-base'>
